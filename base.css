@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+}
+
+.border-right {
+    border-right: 1px solid black;
+}
+
+nav, header, aside, .content, .box, footer {
+    border: .5px solid black;
+}

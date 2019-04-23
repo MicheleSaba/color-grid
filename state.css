@@ -1,0 +1,75 @@
+@media only screen and (min-width: 1024px) { 
+    .red {
+        background-color: red;
+    }
+    .orange {
+        background-color: orange;
+    }
+    .yellow {
+        background-color: yellow;
+    }
+    .green {
+        background-color: green;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .indigo {
+        background-color: indigo;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .red {
+        background-color: rgb(131, 18, 18);
+    }
+    .orange {
+        background-color: rgb(131, 90, 15);
+    }
+    .yellow {
+        background-color: rgb(151, 151, 9);
+    }
+    .green {
+        background-color: rgb(18, 241, 18);
+    }
+    .blue {
+        background-color: rgb(33, 33, 151);
+    }
+    .indigo {
+        background-color: rgb(147, 41, 223);
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .red {
+        background-color: rgb(160, 128, 128) !important;
+    }
+    .orange {
+        background-color: rgb(133, 113, 77);
+    }
+    .yellow {
+        background-color: rgb(141, 141, 83);
+    }
+    .green {
+        background-color: rgb(106, 190, 106);
+    }
+    .blue {
+        background-color: rgb(92, 92, 172);
+    }
+    .indigo {
+        background-color: rgb(142, 101, 172);
+    }
+    nav {
+        background-color: rgb(186, 179, 190);
+    }
+    header {
+        background-color: rgb(92, 90, 94);
+    }
+    aside {
+        background-color: rgb(252, 251, 253);
+    }
+    footer {
+        background-color: rgb(47, 34, 56);
+    }
+}
