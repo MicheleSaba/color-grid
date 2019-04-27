@@ -11,11 +11,20 @@
     .green {
         background-color: green;
     }
+    .bluegreen {
+        background-color: rgb(19, 158, 123);
+    }
     .blue {
         background-color: blue;
     }
+    .bluepurple {
+        background-color: rgb(98, 98, 226);
+    }
     .indigo {
         background-color: indigo;
+    }
+    .pink {
+        background-color: #f44271;
     }
 }
 
@@ -38,7 +47,15 @@
     .indigo {
         background-color: rgb(147, 41, 223);
     }
-    
+    .bluepurple {
+        background-color: #c0eb24;
+    }
+    .pink {
+        background-color: #f44271;
+    }
+    .bluegreen {
+        background-color: aqua;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -60,16 +77,8 @@
     .indigo {
         background-color: rgb(142, 101, 172);
     }
-    nav {
-        background-color: rgb(186, 179, 190);
+    .bluepurple {
+        background-color: black;
     }
-    header {
-        background-color: rgb(92, 90, 94);
-    }
-    aside {
-        background-color: rgb(252, 251, 253);
-    }
-    footer {
-        background-color: rgb(47, 34, 56);
-    }
+
 }
