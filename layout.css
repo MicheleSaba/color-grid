@@ -1,92 +1,86 @@
 body {
     border: none;
+    width: 960px; 
+    margin: auto; 
+    color: #fff; 
+    text-transform: uppercase;
 }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* grid-template-rows: repeat(4); */
+    }
+    div :nth-child(1) {
+    grid-column-start: 1; 
+    grid-column: span 10;
+    grid-row-start: 1; 
+    grid-row: span 1; 
+    height: 70px; 
+    }
+    div :nth-child(2) {
+    grid-column-start: 1; 
+    grid-column: span 2;
+    grid-row-start: 2; 
+    grid-row: span 3; 
+    }
 
-main {
-    max-width: 960px;
-    margin: auto;
-    overflow: hidden;
-    border: none;
-}
-
-nav {
-    height: 100px;
-    background-color: rgb(200, 255, 0);
-    line-height: 100px;
-}
-aside {
-    width: 20%;
-    height: 600px;
-    float: left;
-    background-color: rgb(160, 149, 149);
-    line-height: 600px;
-}
-
-.content {
-    width: 40%;
-    float: left;
-    height: 200px;
-    line-height: 200px;
-}
-
-.box {
+  div :nth-child(3), 
+  div :nth-child(4) {
+    grid-column: span 4;
+    grid-row: span 1; 
+    height: 200px; 
+    }
+  div:nth-child(5),
+  div:nth-child(6),
+  div:nth-child(7),
+  div:nth-child(8) {
+    grid-column: span 2;
     height: 250px;
-    width: 20%;
-    float: left;
-    line-height: 250px;
-}
-
-footer {
-    height: 150px;
-    width: 80%;
-    float: left;
-    background-color: rgb(39, 100, 42);
-    line-height: 150px;
-}
-
-@media only screen and (max-width: 767px) {
-    nav {
-        height: 75px;
-        background-color: rgba(60, 179, 113, 0.726);
-        line-height: 75px;
+    }
+  div:nth-child(9) {
+    grid-column: span 8;
     }
 
-    header {
-        height: 125px;
-        background-color: rgba(123, 210, 231, 0.781);
-        line-height: 125px;
-    }
+    @media only screen and (max-width: 767px) {  
+        body {
+            width: 100%; 
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(7);
+            }
+            div :nth-child(1) {
+            grid-column-start: 1; 
+            grid-column: span 2;
+            grid-row: span 1; 
+            height: 70px; 
+            }
+            div :nth-child(2) {
+            grid-column: span 2;
+            grid-row: span 1; 
+            height: 150px
+            }
+        
+          div :nth-child(3), 
+          div :nth-child(4) {
+            grid-column: span 2;
+            grid-row: span 1; 
+            height: 125px; 
+            }
 
-    aside {
-        height: 150px;
-        background-color: rgb(194, 108, 38);
-        line-height: 150px;
-    }
-    
-    .content {
-        height: 125px;
-        background-color: rgb(77, 67, 114);
-        line-height: 125px;
-    }
-
-    .box {
-        height: 250px;
-        background-color: rgb(126, 148, 47);
-        line-height: 250px;
-    }
-
-    footer {
-        height: 80px;
-        background-color: rgb(179, 185, 154);
-        line-height: 80px;
-    }
-    .fullwidth {
-        width: 100%;
-    }
-
-    .halfwidth {
-        width: 50%;
-        height: 250px;
-        float: left;
-    }
-  }
+          div:nth-child(5),
+          div:nth-child(6),
+          div:nth-child(7),
+          div:nth-child(8) {
+            grid-column: span 1;
+            grid-row: span 1; 
+            height: 250px;
+            }
+          div:nth-child(9) {
+            grid-column: span 2;
+            height: 80px;
+            }
+        
+      }
+   
